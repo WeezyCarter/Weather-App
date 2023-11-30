@@ -1,0 +1,83 @@
+﻿@model ResultViewModel
+@{
+}
+
+<form action="~/Weather/Index" method="post">
+    <div>
+        <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h1 class="display-4" style="margin: 20px 0px;">weather</h1>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>City: </label>
+                <input type="text" class="form-control" name="city" value = "@Model.City" />
+            </div>
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Country: </label>
+                <input type="text" class="form-control" name="country" value = "@Model.Country"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Latitude: </label>
+                <input type="text" class="form-control" name="latitude" value ="@Model.Lat" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Longitude: </label>
+                <input type="text" class="form-control" name="longitude" value="@Model.Lon" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Description: </label>
+                <input type="text" class="form-control" name="description" value ="@Model.Description"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Humidity: </label>
+                <input type="text" class="form-control" name="humidity" value="@Model.Humidity" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Temp Feels Like: </label>
+                <input type="text" class="form-control" name="tempFeelsLike" value="@Model.TempFeelsLike" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Temp: </label>
+                <input type="text" class="form-control" name="temp" value="@Model.Temp" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Temp Max: </label>
+                <input type="text" class="form-control" name="tempMax" value="@Model.TempMax" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Temp Min: </label>
+                <input type="text" class="form-control" name="tempMin" value="@Model.TempMin" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Weather Icon: </label>
+                <input type="image" class="form-control" name="weatherIcon" value="@Model.WeatherIcon" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3">
+                <button type="button" class="btn btn-secondary" onclick="location.href = '/Weather/Index'">BACK</button>
+            </div>
+        </div>
+    </div>
+</form>
+
